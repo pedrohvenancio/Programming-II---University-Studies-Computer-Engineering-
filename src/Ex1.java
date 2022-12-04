@@ -1,11 +1,11 @@
 import java.util.Scanner;
-/*Construa um programa que leia um número n e imprima
-n linhas no formato de um triangulo retangulo:*/
+/*Build a program that reads a number n and prints
+n lines in the shape of a rectangular triangle:*/
 public class Ex1 {
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Digite um numero:");
+        System.out.println("Enter a number:");
         int n = input.nextInt();
         
         for (int i = 1; i < n + 1; i++){

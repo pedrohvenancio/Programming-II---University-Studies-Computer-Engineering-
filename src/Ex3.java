@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-/* Faça uma função que recebe, por parâmetro, uma matriz A(5,5)
-e retorna a soma dos seus elementos.*/
+/*Make a function that takes, by parameter, an array A(5,5)
+and returns the sum of its elements*/
 
 public class Ex3 {
 
@@ -9,28 +9,28 @@ public class Ex3 {
         Scanner input = new Scanner(System.in);
         int[][] x = new int[5][5];
 
-        System.out.println("Olá, digite sua matriz:");
-        leitura(x);
+        System.out.println("Hello, enter your array:");
+        readerr(x);
     }
 
-    public static void leitura(int[][] x){ 
+    public static void readerr(int[][] x){ 
         Scanner input = new Scanner(System.in);
 
         for (int i = 0; i < 5; i++){
-            System.out.println("Linha " + (i +1) + ":");
+            System.out.println("Line " + (i +1) + ":");
             for(int j = 0; j < 5; j++){
-                System.out.println("Numero " + (j + 1));
+                System.out.println("Number " + (j + 1));
                 x[i][j] = input.nextInt();
             }
         }
 
-        int soma, i, j;
-        soma = 0;
+        int sum, i, j;
+        sum = 0;
         for (i = 0; i < 5; i++){
             for (j = 0; j < 5; j++){
-                soma = x[i][j] + soma;
+                sum = x[i][j] + sum;
             }
         }
-        System.out.println("A soma de todos os numeros é: " + soma);
+        System.out.println("The sum  of these numbers is: " + sum);
     }
 }

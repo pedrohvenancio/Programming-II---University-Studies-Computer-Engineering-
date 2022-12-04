@@ -1,27 +1,27 @@
 import java.util.Scanner;
-/*Escrever uma função que receba um vetor com 10 valores
-e retorne quantos destes valores são negativos*/
+/*Write a function that receives a vector with 10 values
+and return how many of these values are negative*/
 public class Ex2 {
     public static void main(String[] args)  throws Exception{
         Scanner input = new Scanner(System.in);
         int[] x = new int[10];
         int qtd = 0;
 
-        System.out.println("Digite 10 numeros (positivos e negativos):");
+        System.out.println("Enter 10 numbers (positives and negatives):");
 
         for(int i = 0; i < 10; i++){
-            System.out.println("Digite o numero " + (i + 1) + ":");
+            System.out.println("Enter a number " + (i + 1) + ":");
             x[i] = input.nextInt();
             if (x[i] < 0){
                 qtd++;
             }
         }
 
-        System.out.println("Os numeros digitados foram:");
+        System.out.println("The numbers entered were:");
 
         for (int i = 0; i < 10; i++){
             System.out.println(x[i]);
         }
-        System.out.println("Voce digitou " + qtd + " numeros negativos!");
+        System.out.println("You entered " + qtd + " negative numbers!");
     }
 }
